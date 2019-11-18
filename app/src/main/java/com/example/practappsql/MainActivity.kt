@@ -90,15 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    /*
 
-     fun insertar(v : View){
-        if ((editTextMarca.length()>0) and (editTextModelo.length()>0) and (editTextPrecio.length()>0)  ) {
-            val url =
-            leerUrl(url)
-        }
-    }
-     */
 
 
     private fun leerUrl(urlString: String): String {
