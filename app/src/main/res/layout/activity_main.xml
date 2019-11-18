@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclercoches"
+            android:layout_width="match_parent"
+            android:layout_height="470dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/butconsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="consulta"
+            android:text="CONSULTAR" />
+
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/butinsertar"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="insertar"
+                android:text="INSERTAR" />
+
+            <EditText
+                android:id="@+id/editmarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Marca"
+               />
+
+            <EditText
+                android:id="@+id/editmodelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Modelo"/>
+
+            <EditText
+                android:id="@+id/editmatricula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Matricula"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="406dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editurl"
+                android:layout_width="431dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:ems="10"
+                android:hint="Url imagen"
+                android:inputType="textPersonName"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
