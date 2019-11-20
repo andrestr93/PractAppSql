@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         } catch (e: Exception) {
             Log.d("RESULTADO", "error")
             prueba?.text = "Error"
-            Toast.makeText(this, "errror", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "error", Toast.LENGTH_SHORT).show()
         }
 
 
